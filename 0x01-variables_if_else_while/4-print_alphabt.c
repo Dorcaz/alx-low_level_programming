@@ -11,10 +11,13 @@ int main(void)
 char catch = 'a';
 while (catch <= 'z')
 {
-	if (catch != 'e' || catch != 'q')
+	if (catch == 'e' || catch == 'q')
+	{
+		catch++;
+	}
+	else
 	{
 		putchar(catch);
-	}
 	catch++;
 }
 putchar('\n');
