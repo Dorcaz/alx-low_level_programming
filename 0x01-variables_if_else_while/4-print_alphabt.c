@@ -18,7 +18,8 @@ while (catch <= 'z')
 	else
 	{
 		putchar(catch);
-	catch++;
+		catch++;
+	}
 }
 putchar('\n');
 return (0);
