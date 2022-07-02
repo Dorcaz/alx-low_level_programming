@@ -5,10 +5,18 @@
  **/
 int main(void)
 {
-char c;
-for (c = 'a'; c <= 'z'; ++c)
+char c = 'a';
+while (c <= 'z')
 {
-	putchar(c);
+	if (c == 'e' || c == 'q')
+	{
+		c++;
+	}
+	else
+	{
+		putchar(c);
+	}
+	c++;
 }
 putchar('\n');
 return (0);
