@@ -5,18 +5,18 @@
  **/
 int main(void)
 {
-char c = 'a';
-while (c <= 'z')
+char catch = 'a';
+while (catch <= 'z')
 {
-	if (c == 'e' || c == 'q')
+	if (catch == 'e' || catch == 'q')
 	{
-		c++;
+		catch++;
 	}
 	else
 	{
-		putchar(c);
+		putchar(catch);
 	}
-	c++;
+	catch++;
 }
 putchar('\n');
 return (0);
