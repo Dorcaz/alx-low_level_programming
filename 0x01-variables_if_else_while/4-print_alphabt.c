@@ -13,7 +13,7 @@ while (catch <= 'z')
 {
 	if (catch == 'e' || catch == 'q')
 	{
-		catch++;
+		++catch;
 	}
 	else
 	{
