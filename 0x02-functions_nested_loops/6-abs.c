@@ -3,7 +3,7 @@
  * *_abs - computes absolute value
  * *@n: int to compute as absolute
  * *Return: absolute value
- * */
+ **/
 int _abs(int n)
 {
 	if (n < 0)
