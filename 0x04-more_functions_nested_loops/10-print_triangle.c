@@ -2,7 +2,7 @@
 
 /**
  * *print_triangle - print a triangle
- * *@size: demensions of triangle
+ * *@length: demensions of triangle
  * *Return: nothing
  **/
 
@@ -12,7 +12,7 @@ void print_triangle(int length)
 
 	for (i = 1; i <= length; i++)
 	{
-		for (j = size - i; j > 0; j--)
+		for (j = length - i; j > 0; j--)
 			_putchar(' ');
 		for (j = i; j > 0; j--)
 			_putchar('#';
