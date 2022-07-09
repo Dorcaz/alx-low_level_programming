@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 /**
  * *print_most_numbers - print 0-9 without 2 and 4
@@ -13,9 +13,9 @@ void print_most_numbers(void)
 	{
 		if ((i != '2') && (i != '4'))
 		{
-			putchar(i);
+			_putchar(i);
 		}
 		i++;
 	}
-	putchar('\n');
+	_putchar('\n');
 }
