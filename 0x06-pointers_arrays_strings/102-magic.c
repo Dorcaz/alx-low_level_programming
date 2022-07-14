@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - print magic
- * Return: - return 0 on success
- */
+ * main - does magic
+ * Return: - nothing
+ **/
 int main(void)
 {
 	int n;
@@ -15,7 +15,7 @@ int main(void)
 	/*
 	*    * write your line of code here...
 	*       * Remember:
-	*          * - you are not allowed to use a
+	*       *          * - you are not allowed to use a
 	*             * - you are not allowed to modify p
 	*                * - only one statement
 	** - you are not allowed to code anything else than this line of code
