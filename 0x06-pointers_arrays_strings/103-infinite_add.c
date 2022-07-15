@@ -1,5 +1,4 @@
 #include "main.h"
-
 #include <stdio.h>
 
 /**
@@ -12,7 +11,6 @@
  */
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
-
 {
 	int c1 = 0, c2 = 0, op, bg, dr1, dr2, add = 0;
 
@@ -49,7 +47,9 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		else
 			dr2 = 0;
 		bg--, size_r--;
+	}
 	if (*(r) == '0')
 		return (r + 1);
 	else
 		return (r);
+}
