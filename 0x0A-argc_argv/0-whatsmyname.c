@@ -6,7 +6,7 @@
  * * @argv: arguments entered
  * * Description: print name of file
  * * Return: zero
- * */
+ **/
 
 int main(int argc, char *argv[])
 {
