@@ -42,6 +42,7 @@ char *create_xarray(int size)
 {
 	char *array;
 	int index;
+
 	array = malloc(sizeof(char) * size);
 
 	if (array == NULL)
@@ -119,7 +120,8 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 	}
 	for (; mult_len >= 0; mult_len--, mult--, prod--)
 	{
-		if (*mult < '0' || *mult > '9')							{
+		if (*mult < '0' || *mult > '9')
+		{
 			printf("Error\n");
 			exit(98);
 		}
@@ -186,6 +188,7 @@ int main(int argc, char *argv[])
 {
 	char *final_prod, *next_prod;
 	int size, index, digit, zeroes = 0;
+
 	if (argc != 3)
 	{
 		printf("Error\n");
@@ -203,11 +206,11 @@ int main(int argc, char *argv[])
 	size = find_len(argv[1]) + find_len(argv[2]);
 	final_prod = create_xarray(size + 1);
 	next_prod = create_xarray(size + 1);
-											for (index = find_len(argv[2]) - 1; index >= 0; index--)
+	for (index = find_len(argv[2]) - 1; index >= 0; index--)
 	{
-		digit = get_digit(*(argv[2] + index));
-		get_prod(next_prod, argv[1], digit, zeroes++);
-												add_nums(final_prod, next_prod, size - 1);
+	digit = get_digit(*(argv[2] + index));
+	get_prod(next_prod, argv[1], digit, zeroes++);
+	add_nums(final_prod, next_prod, size - 1);
 	}
 	for (index = 0; final_prod[index]; index++)
 	{
